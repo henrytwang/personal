@@ -2,8 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+@font-face {
+font-family: 'AvenirNext';
+src: url('AvenirNext.otf');
+}
+
 body {
-    font-family: Helvetica, Arial, sans-serif
+    font-family: AvenirNext;
+    background: url('grey_wash_wall.png');
+}
+
+ul {
+    position: relative;
+    width: 50%;
+    float: right;
+    padding:0;
+    margin:0;
 }
 
 li {
@@ -11,9 +25,27 @@ li {
 }
 
 a {
+    font-size:12px;
     text-decoration: none;
 }
 
 h1 {
     font-size: 20px;
+    text-align: center;
+    padding-top:38px;
+}
+
+.b_card {
+    margin: 0 auto;
+    margin-top: 250px;
+    width: 371px;
+    height: 212px;
+    background: #FFF;
+    -webkit-box-shadow: 0px 5px 9px rgba(50, 50, 50, 0.75);
+    -moz-box-shadow:    0px 5px 9px rgba(50, 50, 50, 0.75);
+    box-shadow:         0px 5px 9px rgba(50, 50, 50, 0.75);
+}
+
+.gravatar {
+    margin-left:90px;
 }
