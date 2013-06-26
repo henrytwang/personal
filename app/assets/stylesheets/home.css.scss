@@ -3,72 +3,74 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @font-face {
-font-family: 'AvenirNext';
-src: url('AvenirNext.otf');
+  font-family: 'AvenirNext';
+  src: url('AvenirNext.otf');
 }
 
 body {
-    font-family: AvenirNext;
-    width:600px;
-    margin: 0 auto;
+  font-family: AvenirNext;
+  width:700px;
+  margin: 0 auto;
 }
 
 ul {
-    position: relative;
-    width: 50%;
-    float: right;
-    padding:0;
-    margin:0;
+  position: relative;
+  width: 50%;
+  float: right;
+  padding:0;
+  margin:0;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 h1 {
-    text-align: center;
+  text-align: center;
 }
 
 h2 {
-    text-align: left;
+  text-align: left;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .gravatar {
-    width:90px;
-    margin: 0 auto;
+  width:90px;
+  margin: 0 auto;
+  padding:20px;
 }
 
 .resume {
-    margin: 100px 0;
+  margin: 100px 0;
 }
 
 .contact {
-    text-align: center;
-    font-size:14px;
+  text-align: center;
+  font-size:14px;
+  padding-top:20px;
 }
 
 .entry {
-margin-bottom:60px;
+  margin-bottom:60px;
 }
 
 .company {
-width:400px;
+  width:400px;
 }
 
 .years {
-float: right;
-width:100px;
-text-align: right;
+  float: right;
+  width:100px;
+  text-align: right;
 }
 
 .title {
-width:200px;
+  width:200px;
 }
 
 .description {
-width:400px;
+  width:600px;
 }
