@@ -9,7 +9,7 @@
 
 body {
   font-family: AvenirNext;
-  width:700px;
+  width:800px;
   margin: 0 auto;
 }
 
@@ -46,9 +46,9 @@ a {
 .resume {
   margin: 100px 0;
   padding: 60px;
-  -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.20);
-  -moz-box-shadow:    0px 3px 10px rgba(50, 50, 50, 0.20);
-  box-shadow:         0px 3px 10px rgba(50, 50, 50, 0.20);
+  -webkit-box-shadow: 0px 3px 10px rgba(50, 50, 50, 0.05);
+  -moz-box-shadow:    0px 3px 10px rgba(50, 50, 50, 0.05);
+  box-shadow:         0px 3px 10px rgba(50, 50, 50, 0.05);
 }
 
 .contact {
@@ -58,11 +58,13 @@ a {
 }
 
 .entry {
+  margin: 0 auto;
   margin-bottom:60px;
+  width:600px;
 }
 
 .company {
-  width:400px;
+  width:500px;
 }
 
 .years {
