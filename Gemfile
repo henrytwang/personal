@@ -39,3 +39,4 @@ gem 'jquery-rails'
 
 gem 'gravatar-ultimate'
 gem 'thin'
+gem 'newrelic_rpm'
