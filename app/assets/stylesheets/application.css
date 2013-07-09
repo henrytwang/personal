@@ -118,7 +118,7 @@ a:hover {
 }
 
 .nav-links {
-  width: 350px;
+  width: 450px;
   margin: 0 auto;
 }
 
@@ -169,6 +169,10 @@ a:hover {
   width: 100%;
 }
 
+#about {
+  padding-top: 100px;
+}
+
 .about-title {
   font-size: 36px;
   text-align: center;
@@ -181,7 +185,7 @@ a:hover {
 .work-entry {
   width: 800px;
   margin: 0 auto;
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   position:relative;
 }
 
@@ -217,4 +221,8 @@ top:0;
 
 .work-image {
   z-index:-2;
+}
+
+.contact {
+  margin-top: 200px;
 }
