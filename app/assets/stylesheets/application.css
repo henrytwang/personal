@@ -82,6 +82,11 @@ h2 {
 
 a {
   text-decoration: none;
+  color:#999;
+}
+
+a:hover {
+  color:#CCC;
 }
 
 .nav {
@@ -110,15 +115,10 @@ a {
 
 .nav li a {
   line-height: 60px;
-  color: #999;
-}
-
-.nav li a:hover {
-  color:#CCC;
 }
 
 .nav-links {
-  width: 332px;
+  width: 350px;
   margin: 0 auto;
 }
 
@@ -136,7 +136,7 @@ a {
 
 .entry {
   margin: 0 auto;
-  margin-bottom:60px;
+  margin-bottom:30px;
   width:600px;
 }
 
@@ -171,6 +171,7 @@ a {
 
 .about-title {
   font-size: 36px;
+  text-align: center;
 }
 
 #work {
