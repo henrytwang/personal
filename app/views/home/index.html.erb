@@ -1,104 +1,61 @@
-<div class="resume">
-
-    <h1>Henry Wang</h1>
-
+<div id="container">
+  <div id="about">
     <div class="gravatar">
       <%= image_tag Gravatar.new("hwang89@gmail.com").image_url, width: '90' %>
     </div>
+    <div class="entry">
+      <span class="about-title">Henry Wang is a web developer.</span>
+    </div>
+    <div class="entry">
+      I'm a recent Dev Bootcamp graduate. After 800 hours of instruction, pair programming, and projects with a group of motivated teachers and students, I'm proud to call myself an aspiring junior web developer.
+    </div>
+    <div class="entry">
+      My passion is building products that people connect with on a daily basis. With a background in marketing, I find myself skewing towards maximizing conversion rates. At the end of the day, it all comes back to the user experience.
+    </div>
+    <div class="entry">
+      Skills: Ruby on Rails, Javascript, jQuery, HTML, CSS, MySQL
+    </div>
+  </div>
 
+  <div id="work">
+    <div class="work-entry">
+      <%= link_to(image_tag('DBConnect.png', width: "800", class: "work-image"), "http://dbconnect.herokuapp.com/", :target => '_blank' ) %>
+      <div class="work-text">
+        <div class="project"><h3>DBConnect</h3></div>
+        <div class="description">The networking tool for DevBootcamp alumni and employers. (DBC final project).</div>
+        <div class="languages">Ruby (Rails), PostgreSQL, Javascript (jQuery), Heroku, Solr.</div>
+      </div>
+    </div>
+
+    <div class="work-entry">
+      <%= link_to(image_tag('thinkful.png', width: "800", class: "work-image"), "http://www.thinkful.com/", :target => '_blank' ) %>
+      <div class="work-text">
+        <div class="project"><h3>Thinkful</h3></div>
+        <div class="description">Remotely implemented the site redesign and several lead gen landing pages.</div>
+        <div class="languages">Rails, Heroku, Javascript (jQuery).</div>
+      </div>
+    </div>
+
+    <div class="work-entry">
+      <%= link_to(image_tag('ROB.png', width: "800", class: "work-image"), "http://www.rapperorbird.com/", :target => '_blank' ) %>
+      <div class="work-text">
+        <div class="project"><h3>R.O.B.</h3></div>
+        <div class="description">Don't let your ears fool you. Inspired by The Rap Board.</div>
+        <div class="languages">Sinatra, Heroku, jQuery.</div>
+      </div>
+    </div>
+  </div>
+
+  <div id="contact">
     <div class="contact entry">
       <%= link_to "henry.t.wang@gmail.com", "mailto:henry.t.wang@gmail.com"%><br><br><br>
-      <%= link_to "Github", "https://www.github.com/henrytwang", :target => '_blank' %> •
-      <%= link_to "AngelList", "https://angel.co/henry-wang/", :target => '_blank' %> •
-      <%= link_to "Twitter", "https://twitter.com/henrytwang", :target => '_blank' %> •
-      <%= link_to "Blog", "http://henwang.tumblr.com/", :target => '_blank' %> •
-      <%= link_to "Facebook", "http://www.facebook.com/henry.wang", :target => '_blank' %> •
-      <%= link_to "Flickr", "http://flic.kr/s/aHsjGkxxov", :target => '_blank' %> •
+      <%= link_to "Github", "https://www.github.com/henrytwang", :target => '_blank' %>
+      <%= link_to "AngelList", "https://angel.co/henry-wang/", :target => '_blank' %>
+      <%= link_to "Twitter", "https://twitter.com/henrytwang", :target => '_blank' %>
+      <%= link_to "Blog", "http://henwang.tumblr.com/", :target => '_blank' %>
+      <%= link_to "Facebook", "http://www.facebook.com/henry.wang", :target => '_blank' %>
+      <%= link_to "Flickr", "http://flic.kr/s/aHsjGkxxov", :target => '_blank' %>
       <%= link_to "Resume", "/HenryWang_Resume.pdf", :target => '_blank' %>
     </div>
-
-    <h2>Overview</h2>
-
-    <div class="entry">
-      I am a full-stack web developer with a bent on growth.
-      My passion is building products that people connect with on a daily basis.
-      My goal is to focus on both conversion rates and the user experience.
-    </div>
-
-    <h2>Specialties</h2>
-
-    <div class="entry">
-      Ruby on Rails, Javascript, jQuery, HTML, CSS, MySQL
-    </div>
-
-    <h2>Recent Work</h2>
-
-    <div class="entry">
-      <div class="project"><h3>DBConnect</h3></div>
-      <%= link_to(image_tag('DBConnect.png', width: "600"), "http://dbconnect.herokuapp.com/", :target => '_blank' ) %>
-      <div class="description">The networking tool for DevBootcamp alumni and employers. (DBC final project)</div>
-      <br>Ruby (Rails), PostgreSQL, Javascript (jQuery), Heroku, Solr
-    </div>
-
-    <div class="entry">
-      <div class="project"><h3>Thinkful</h3></div>
-      <%= link_to(image_tag('thinkful.png', width: "600"), "http://www.thinkful.com/", :target => '_blank' ) %>
-      <div class="description">Remotely implemented the site redesign and several lead gen landing pages.</div>
-      <br>Rails, Heroku, Javascript (jQuery)
-    </div>
-
-    <div class="entry">
-      <div class="project"><h3>R.O.B.</h3></div>
-      <%= link_to(image_tag('ROB.png', width: "600"), "http://www.rapperorbird.com/", :target => '_blank' ) %>
-      <div class="description">Don't let your ears fool you. Inspired by <%= link_to "The Rap Board", "http://www.therapboard.com/" %>.</div>
-      <br>Sinatra, Heroku, jQuery
-    </div>
-
-    <h2>Experience</h2>
-
-    <div class="entry">
-      <div class="company"><h3>Dev Bootcamp</h3></div>
-      <div class="years">2013</div>
-      <div class="description">10-week web development apprenticeship. Full stack web development.</div>
-    </div>
-
-    <div class="entry">
-      <div class="company"><h3>Sales4Startups</h3></div>
-      <div class="years">2012—2013</div>
-      <div class="title">Mentor & Speaker</div>
-      <div class="description">Joined a team of passionate technology entrepreneurs who love to share their insights around the topic of sales. We conducted evening sales seminars and training for startup companies.</div>
-    </div>
-
-    <div class="entry">
-      <div class="company"><h3>Fileboard</h3></div>
-      <div class="years">2011-2013</div>
-      <div class="title">Director of Marketing</div>
-      <div class="description">Developed Fileboard’s product messaging, value propositions, product overviews, white paper, newsletter, and marketing strategy. Also conducted demonstrations, webinars, and pricing analysis.</div>
-    </div>
-
-    <div class="entry">
-      <div class="company"><h3>Ace Metrix</h3></div>
-      <div class="years">2011</div>
-      <div class="title">Analyst</div>
-      <div class="description">Responsible for operations including data management, analytics, content review, and survey deployment.</div>
-    </div>
-
-    <div class="entry">
-      <div class="company"><h3>AOL</h3></div>
-      <div class="years">2006-2008</div>
-      <div class="title">Social Media Consultant</div>
-      <div class="description">Landed my first gig ever in high school. User growth and content for Netscape.com portal relaunch. Generated content and helped admin the 500,000+ user community.</div>
-    </div>
-
-    <h2>Education</h2>
-
-    <div class="entry">
-      <div class="company"><h3>University of Illinois at Urbana-Champaign</h3></div>
-      <div class="years">2007—2011</div>
-      <div class="description">B.A. in Communication</div>
-    </div>
-
-    <h2>Get in touch</h2>
-    <div>I'm happy to provide references upon request. I look forward to hearing from you.</div>
-
+  </div>
 </div>

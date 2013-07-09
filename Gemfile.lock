@@ -38,6 +38,8 @@ GEM
       execjs
     coffee-script-source (1.6.2)
     daemons (1.1.9)
+    entypo-rails (2.0.1)
+      railties (>= 3.1, <= 5)
     erubis (2.7.0)
     eventmachine (1.0.3)
     execjs (1.4.0)
@@ -112,6 +114,7 @@ PLATFORMS
 
 DEPENDENCIES
   coffee-rails (~> 3.2.1)
+  entypo-rails
   gravatar-ultimate
   jquery-rails
   newrelic_rpm
