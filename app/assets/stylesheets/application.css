@@ -89,6 +89,17 @@ a:hover {
   color:#CCC;
 }
 
+.personal-logo {
+  width:100px;
+  float:left;
+  position:absolute;
+}
+
+.personal-logo-invert {
+  width:100px;
+  float:left;
+}
+
 .nav {
   top:0;
   left:0;
