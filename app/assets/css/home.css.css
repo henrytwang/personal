@@ -137,3 +137,7 @@ a {
 #about, #projects, #photography, #contact {
   padding-top: 60px;
 }
+
+.work-text {
+  padding: 100px;
+}

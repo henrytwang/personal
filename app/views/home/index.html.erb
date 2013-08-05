@@ -1,16 +1,13 @@
 <div id="container">
   <div id="about">
     <div class="gravatar">
-      <%= image_tag Gravatar.new("hwang89@gmail.com").image_url, width: '90' %>
+      <%= image_tag Gravatar.new("hwang89@gmail.com").image_url, width: '100' %>
     </div>
     <div class="entry">
-      <div class="about-title">Henry Wang is a web developer.</div>
+      <div class="about-title">Henry Wang is a Web Developer.</div>
     </div>
     <div class="entry">
-      I'm a recent Dev Bootcamp graduate. After 800 hours of instruction, pair programming, and projects with a group of motivated teachers and students, I'm proud to call myself an aspiring junior web developer.
-    </div>
-    <div class="entry">
-      My passion is building products that people connect with on a daily basis. With a background in marketing, I find myself skewing towards maximizing conversion rates. At the end of the day, it all comes back to the user experience.
+      My passion is building products that people connect with on a daily basis. With a background in marketing, I skew towards growth and maximizing conversion rates. At the end of the day, I strive to create the best user experience possible.
     </div>
     <div class="entry">
       Skills: Ruby on Rails, Javascript, jQuery, HTML, CSS, MySQL
@@ -18,12 +15,22 @@
   </div>
 
   <div id="work">
+
+    <div class="work-entry">
+      <%= image_tag 'blank.png', width: "800", class: "work-image" %>
+      <div class="work-text">
+        <div class="project"><h3>Next Test (in development)</h3></div>
+        <div class="description">Marketers and business owners have many effective A/B testing tools at their disposal (e.g. Optimizely, Visual Website Optimizer, etc.). By making the right A/B tests, big gains can be made. Deciding what tests to make is far from easy. I'm building an app to connect these decision makers with crowdsourced optimizations of their pages.</div>
+        <div class="languages">Rails, PostgreSQL, Javascript, jQuery, Heroku, Split.</div>
+      </div>
+    </div>
+
     <div class="work-entry">
       <%= link_to(image_tag('DBConnect.png', width: "800", class: "work-image"), "http://dbconnect.herokuapp.com/", :target => '_blank' ) %>
       <div class="work-text">
         <div class="project"><h3>DBConnect</h3></div>
         <div class="description">The networking tool for DevBootcamp alumni and employers. (DBC final project).</div>
-        <div class="languages">Ruby (Rails), PostgreSQL, Javascript (jQuery), Heroku, Solr.</div>
+        <div class="languages">Rails, PostgreSQL, Javascript, jQuery, Heroku, Solr.</div>
       </div>
     </div>
 
@@ -32,7 +39,7 @@
       <div class="work-text">
         <div class="project"><h3>Thinkful</h3></div>
         <div class="description">Remotely implemented the site redesign and several lead gen landing pages.</div>
-        <div class="languages">Rails, Heroku, Javascript (jQuery).</div>
+        <div class="languages">Rails, Heroku, Javascript, jQuery.</div>
       </div>
     </div>
 
