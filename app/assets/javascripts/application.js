@@ -31,7 +31,7 @@ $(document).ready(function(){
     }
   });
 
-  $('#about').css('height', window.screen.availHeight - 200);
+  // $('#about').css('height', window.screen.availHeight - 200);
   $('#contact').css('height', window.screen.availHeight - 200);
 
   $('body').on('click', '#nav-about', function(e) {

@@ -222,6 +222,12 @@ top:0;
   font-size: 13px;
 }
 
+.description {
+  width: 500px;
+  margin: 0 auto;
+  line-height: 1.5em;
+}
+
 .languages {
   margin-top: 20px;
 }
@@ -236,4 +242,9 @@ top:0;
 
 .contact {
   margin-top: 200px;
+}
+
+.entry-title {
+  clear:both;
+  font-weight: bold;
 }
