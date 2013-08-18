@@ -21,36 +21,6 @@ $(document).ready(function(){
   var top = $nav.offset().top;
   var bottom = top + $nav.height();
 
-  $nav.scroll(function() {
-    if($about.offset().top < bottom) {
-        $('#nav-about').css('color', '#CCC');
-    } else if ($work.offset().top < bottom) {
-        $('#nav-work').css('color', '#CCC');
-    } else if ($contact.offset().top < bottom) {
-        $('#nav-contact').css('color', '#CCC');
-    }
-  });
-
-  // $('#about').css('height', window.screen.availHeight - 200);
-  $('#contact').css('height', window.screen.availHeight - 200);
-
-  $('body').on('click', '#nav-about', function(e) {
-    e.preventDefault();
-    $('html,body').stop().animate({scrollTop: $('#about').offset().top}, 500);
-  });
-  $('body').on('click', '#nav-work', function(e) {
-    e.preventDefault();
-    $('html,body').stop().animate({scrollTop: $('#work').offset().top}, 500);
-  });
-  $('body').on('click', '#nav-photography', function(e) {
-    e.preventDefault();
-    $('html,body').stop().animate({scrollTop: $('#photography').offset().top}, 500);
-  });
-  $('body').on('click', '#nav-contact', function(e) {
-    e.preventDefault();
-    $('html,body').stop().animate({scrollTop: $('#contact').offset().top}, 500);
-  });
-
   $(function(){
     $(".work-image").hover(
     function() {
@@ -61,14 +31,5 @@ $(document).ready(function(){
     });
   });
 
-  $(function(){
-    $(".personal-logo img").hover(
-    function() {
-        $(this).stop().animate({"opacity": "0"}, 350);
-    },
-    function() {
-        $(this).stop().animate({"opacity": "1"}, 350);
-    });
-  });
 
 });

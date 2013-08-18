@@ -13,63 +13,77 @@
  */
 
 
-@font-face {
-     font-family: 'StateFaceRegular';
-     src: url('stateface-regular-webfont.eot');
-     src: url('stateface-regular-webfont.eot?#iefix') format('embedded-opentype'),
-          url('stateface-regular-webfont.woff') format('woff'),
-          url('stateface-regular-webfont.ttf') format('truetype'),
-          url('stateface-regular-webfont.svg#StateFaceRegular') format('svg');
-     font-weight: normal;
-     font-style: normal;
- }
-
-@font-face {
-     font-family: 'Entypo-Social';
-     src: url('entypo-social.eot');
-     src: url('entypo-social.woff') format('woff'),
-          url('entypo-social.ttf') format('truetype'),
-          url('entypo-social.svg') format('svg');
-     font-weight: normal;
-     font-style: normal;
+a:active,
+a:hover {
+  outline: 0;
 }
 
-@font-face {
-     font-family: 'Entypo';
-     src: url('entypo.eot');
-     src: url('entypo.woff') format('woff'),
-          url('entypo.ttf') format('truetype'),
-          url('entypo.svg') format('svg');
-     font-weight: normal;
-     font-style: normal;
-}
-
-@font-face {
-     font-family: 'Geobats';
-     src: url('geobats.ttf') format('truetype');
-     font-weight: normal;
-     font-style: normal;
-}
-
-@font-face {
-     font-family: 'Futura';
-     src: url('futura.ttc') format('truetype');
-     font-weight: normal;
-}
+@-webkit-viewport { width: device-width; }
+@-moz-viewport { width: device-width; }
+@-ms-viewport { width: device-width; }
+@-o-viewport { width: device-width; }
+@viewport { width: device-width; }
 
 body {
-  font-family: Georgia, helvetica, arial, sans-serif;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+  color: #37302a;
+  background: #fff;
+  font: normal 100%/1.4 sans-serif;
   margin: 0 auto;
-  overflow-y: hidden;
 }
 
-ul {
-  padding:0;
-  margin:0;
+#nav,
+#nav * {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-li {
-  list-style-type: none;
+#nav,
+#nav ul {
+  list-style: none;
+  width: 100%;
+  float: left;
+}
+
+#nav li {
+  float: left;
+  width: 33%;
+}
+
+#nav a {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  background: #f4421a;
+  border-bottom: 1px solid white;
+  padding: 0.7em 1em;
+  float: left;
+}
+
+#nav ul ul a {
+  background: #ca3716;
+  padding-left: 2em;
+}
+
+#nav-toggle {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 70px;
+  height: 55px;
+  float: right;
+  text-indent: -9999px;
+  overflow: hidden;
+  background: #f4421a url("hamburger.gif") no-repeat 50% 33%;
+}
+
+#container {
+  padding-top: 100px;
 }
 
 h1 {
@@ -78,59 +92,6 @@ h1 {
 
 h2 {
   text-align: left;
-}
-
-a {
-  text-decoration: none;
-  color:#999;
-}
-
-a:hover {
-  color:#CCC;
-}
-
-.personal-logo {
-  width:100px;
-  float:left;
-  position:absolute;
-}
-
-.personal-logo-invert {
-  width:100px;
-  float:left;
-}
-
-.nav {
-  top:0;
-  left:0;
-  height: 60px;
-  position: fixed;
-  width: 100%;
-  background-color: white;
-  border-bottom: 1px solid lightgrey;
-  opacity: 0.98;
-  z-index:2;
-}
-
-.nav ul {
-  display: inline-block;
-}
-
-.nav li {
-  margin: 0 20px;
-  float: left;
-  font-size: 16px;
-  font-weight: normal;
-  list-style-type: none;
-}
-
-.nav li a {
-  line-height: 60px;
-}
-
-.nav-links {
-  width: 450px;
-  margin: 0 auto;
 }
 
 .gravatar {
@@ -169,35 +130,21 @@ a:hover {
   color:#CCC;
 }
 
-#about, #work, #photography, #contact {
-  padding-top: 80px;
-}
-
-#container {
-  position:absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
-}
-
-#about {
-  padding-top: 100px;
-}
 
 .about-title {
   font-size: 36px;
   text-align: center;
 }
 
-#work {
-  width: 100%;
-}
-
 .work-entry {
   width: 800px;
+  height: 430px;
   margin: 0 auto;
   margin-bottom: 50px;
   position:relative;
+  -webkit-box-shadow: 0px 4px 5px rgba(50, 50, 50, 0.4);
+  -moz-box-shadow:    0px 4px 5px rgba(50, 50, 50, 0.4);
+  box-shadow:         0px 4px 5px rgba(50, 50, 50, 0.4);
 }
 
 .work-entry img {
@@ -205,12 +152,12 @@ a:hover {
 }
 
 .work-text {
-background-color: black;
+background-color: #111;
 color: white;
 position: absolute;
 z-index: -1;
 width:100%;
-height:99%;
+height:100%;
 top:0;
 }
 

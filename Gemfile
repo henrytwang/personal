@@ -41,3 +41,6 @@ gem 'gravatar-ultimate'
 gem 'thin'
 gem 'newrelic_rpm'
 gem 'entypo-rails'
+gem "therubyracer"
+gem "less-rails"
+gem "twitter-bootstrap-rails"
