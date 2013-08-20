@@ -3,7 +3,7 @@ Personal::Application.routes.draw do
   resources :home
 
   match 'about' => 'home#about'
-  match 'work' => 'home#work'
+  match 'projects' => 'home#projects'
   match 'resume' => 'home#resume'
 
   root :to => "home#about"
