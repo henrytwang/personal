@@ -12,6 +12,19 @@
  *= require_tree .
  */
 
+ @font-face {
+    font-family: 'proximanova-light';
+    src: url('proximanova-light-webfont.eot');
+    src: url('proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('proximanova-light-webfont.woff') format('woff'),
+         url('proximanova-light-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a {
+  text-decoration: none;
+}
 
 a:active,
 a:hover {
@@ -30,7 +43,7 @@ body {
   text-size-adjust: 100%;
   color: #37302a;
   background: #fff;
-  font: normal 100%/1.4 sans-serif;
+  font: normal 100%/1.4 proximanova-light;
   margin: 0 auto;
 }
 
@@ -94,6 +107,12 @@ h2 {
   text-align: left;
 }
 
+img {
+  display: inline-block;
+  height: auto;
+  max-width: 100%;
+}
+
 .gravatar {
   width:90px;
   margin: 0 auto;
@@ -130,10 +149,13 @@ h2 {
   color:#CCC;
 }
 
-
 .about-title {
   font-size: 36px;
   text-align: center;
+}
+
+#work {
+  margin-top: 60px;
 }
 
 .work-entry {
@@ -159,10 +181,23 @@ z-index: -1;
 width:100%;
 height:100%;
 top:0;
+display: table;
 }
 
-.project, .description, .languages {
-  text-align: center;
+@media only screen and (min-width : 0) and (max-width : 800px) {
+  .work-entry {
+    width: 100%;
+    height: auto;
+  }
+  .work-text {
+    display: none;
+  }
+}
+
+.all-text {
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0 20%;
 }
 
 .description, .languages {
@@ -176,20 +211,12 @@ top:0;
   z-index: 200;
 }
 
-.languages {
-  margin-top: 20px;
-}
-
-.project {
-  margin-top: 160px;
-}
-
 .work-image {
   z-index:-2;
 }
 
 .contact {
-  margin-top: 200px;
+  margin-top: 50px;
 }
 
 .entry-title {

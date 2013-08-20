@@ -6,7 +6,7 @@ Personal::Application.routes.draw do
   match 'work' => 'home#work'
   match 'resume' => 'home#resume'
 
-  root :to => "home#index"
+  root :to => "home#about"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

@@ -1,38 +1,58 @@
 <div id="work">
 
-  <div class="work-entry">
-    <%= image_tag 'nexttest.png', width: "800", class: "work-image" %>
+  <div class="work-entry span6">
+    <%= image_tag 'nexttest.png', class: "work-image" %>
     <div class="work-text">
-      <div class="project"><h3>Next Test (in development)</h3></div>
-      <div class="description">Discover your next A/B tests.</div>
-      <div class="languages">Rails, PostgreSQL, Javascript, jQuery, Heroku, Sidekiq, Split.</div>
+      <div class="all-text">
+      <h3>Next Test (Up and running by end of August)</h3>
+      A/B tests are easy to implement thanks to tools like Optimizely and Visual Website Optimizer, but choosing what tests to make is difficult when you're limited on time and resources. Use Next Text to get feedback and direction from experts before you make your choices.<br/><br/>
+      Choosing the right tests to run is key to survival for a startup. I hope to learn as much as I can through this project.<br/><br/>
+      Rails, PostgreSQL, Javascript, jQuery, Heroku, Sidekiq, Split
+      </div>
     </div>
   </div>
 
   <div class="work-entry">
-    <%= link_to(image_tag('DBConnect.png', width: "800", class: "work-image"), "http://dbconnect.herokuapp.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('readingtime.png', class: "work-image"), "http://emailbox-readability.herokuapp.com/", :target => '_blank' ) %>
     <div class="work-text">
-      <div class="project"><h3>DBConnect</h3></div>
-      <div class="description">The networking tool for DevBootcamp alumni and employers. (DBC final project).</div>
-      <div class="languages">Rails, PostgreSQL, Javascript, jQuery, Heroku, Solr.</div>
+      <div class="all-text">
+        <h3>Reading Time for Emailbox</h3>
+        For those who declare e-mail bankruptcy all too often. Know exactly how long your emails will take to read before you open them. This was built on top of Emailbox.<br /><br/>
+        Rails, Node.js, Emailbox API
+      </div>
     </div>
   </div>
 
   <div class="work-entry">
-    <%= link_to(image_tag('thinkful.png', width: "800", class: "work-image"), "http://www.thinkful.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('DBConnect.png', class: "work-image"), "http://dbc-demo.herokuapp.com/", :target => '_blank' ) %>
     <div class="work-text">
-      <div class="project"><h3>Thinkful</h3></div>
-      <div class="description">Remotely implemented the site redesign and several lead gen landing pages.</div>
-      <div class="languages">Rails, Heroku, Javascript, jQuery.</div>
+      <div class="all-text">
+        <h3>DBConnect</h3>
+        A networking tool for DevBootcamp students, alumni, staff, mentors, and employers. Similar to AngelList, we allow you to quickly find those around you and connect through introductory emails. Built as a final project.<br /><br/>
+        Rails, PostgreSQL, Javascript, jQuery, Heroku, Solr
+      </div>
     </div>
   </div>
 
   <div class="work-entry">
-    <%= link_to(image_tag('ROB.png', width: "800", class: "work-image"), "http://www.rapperorbird.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('thinkful.png', class: "work-image"), "http://www.thinkful.com/", :target => '_blank' ) %>
     <div class="work-text">
-      <div class="project"><h3>R.O.B.</h3></div>
-      <div class="description">Don't let your ears fool you. Inspired by The Rap Board.</div>
-      <div class="languages">Sinatra, Heroku, jQuery.</div>
+      <div class="all-text">
+        <h3>Thinkful</h3>
+        After two months of learning front-end languages, I remotely implemented Thinkful's site redesign and several lead gen landing pages.<br/><br/>
+        Rails, Heroku, Javascript, jQuery
+      </div>
+    </div>
+  </div>
+
+  <div class="work-entry">
+    <%= link_to(image_tag('ROB.png', class: "work-image"), "http://www.rapperorbird.com/", :target => '_blank' ) %>
+    <div class="work-text">
+      <div class="all-text">
+        <h3>R.O.B.</h3>
+        A one-day project to explore web audio. Don't let your ears fool you. Inspired by LP Riel's The Rap Board.<br/><br/>
+        Sinatra, Heroku, jQuery
+      </div>
     </div>
   </div>
 </div>

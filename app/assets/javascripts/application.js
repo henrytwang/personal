@@ -14,22 +14,27 @@
 //= require jquery_ujs
 
 $(document).ready(function(){
-  var $nav = $('#container');
-  var $about = $('#about');
-  var $work = $('#work');
-  var $contact = $('#contact');
-  var top = $nav.offset().top;
-  var bottom = top + $nav.height();
 
   $(function(){
     $(".work-image").hover(
     function() {
-        $(this).stop().animate({"opacity": "0.05"}, 350);
+        $(this).stop().animate({"opacity": "0.05"}, 50);
     },
     function() {
-        $(this).stop().animate({"opacity": "1"}, 350);
+        $(this).stop().animate({"opacity": "1"}, 50);
     });
   });
+
+  $(function(){
+    $("#nav ul li a").hover(
+    function() {
+        $(this).stop().css({ "background-color" : "#f43000"});
+    },
+    function() {
+        $(this).stop().css({ "background-color" : "#f4421a"});
+    });
+  });
+
 
 
 });
