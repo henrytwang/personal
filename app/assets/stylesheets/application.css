@@ -186,7 +186,7 @@ display: table;
 
 @media only screen and (min-width : 0) and (max-width : 800px) {
   .work-entry {
-    width: 100%;
+    width: 90%;
     height: auto;
   }
   .work-text {
