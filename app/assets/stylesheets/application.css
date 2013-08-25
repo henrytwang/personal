@@ -222,6 +222,10 @@ display: table;
 }
 
 .entry-title {
-  clear:both;
+  clear: both;
   font-weight: bold;
+}
+
+.profile-links {
+  margin: 0 10px;
 }
