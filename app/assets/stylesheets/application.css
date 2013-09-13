@@ -45,7 +45,7 @@ body {
   background: #fff;
   font-size: 18px;
   line-height: 26px;
-  font-family: proximanova-light;
+  font-family: proximanova-light !important;
   margin: 0 auto;
 }
 
@@ -115,22 +115,18 @@ img {
   max-width: 100%;
 }
 
+#about {
+  line-height: 1.2em;
+}
+
 .gravatar {
-  width:90px;
+  width: 200px;
   margin: 0 auto;
-  padding:20px;
+  padding: 20px;
 }
 
-.contact {
-  text-align: center;
-  font-size:20px;
-  padding-top:20px;
-}
-
-.entry {
-  margin: 0 auto;
-  margin-bottom:30px;
-  width:600px;
+.row {
+  margin-bottom: 30px !important;
 }
 
 .company {
@@ -152,8 +148,12 @@ img {
 }
 
 .about-title {
-  font-size: 36px;
+  font-size: 30px;
   text-align: center;
+}
+
+.entry {
+  font-size: 16px;
 }
 
 #work {
@@ -200,6 +200,7 @@ display: table;
   display: table-cell;
   vertical-align: middle;
   padding: 0 20%;
+  line-height: 1.5em;
 }
 
 .description, .languages {
@@ -209,16 +210,12 @@ display: table;
 .description {
   width: 500px;
   margin: 0 auto;
-  line-height: 1.5em;
+  line-height: 1.5em !important;
   z-index: 200;
 }
 
 .work-image {
   z-index:-2;
-}
-
-.contact {
-  margin-top: 50px;
 }
 
 .entry-title {
@@ -227,5 +224,5 @@ display: table;
 }
 
 .profile-links {
-  margin: 0 10px;
+  margin-right: 10px;
 }
