@@ -41,16 +41,22 @@ mixpanel.init("8f2d5a4947f55d4527a29e3d9ab72c0e");</script><!-- end Mixpanel -->
     <ul>
       <li><%= link_to "About", "/", :id => "nav-about" %></li>
       <li><%= link_to "Projects", "/projects", :id => "nav-work" %></li>
-      <li><%= link_to "Resume", "/HenryWang_Resume.pdf", :target => '_blank' %></li>
+      <li><%= link_to "Resume", "/HenryWang_Resume.pdf", :id => "nav-resume", :target => '_blank' %></li>
     </ul>
   </div>
   <script type="text/javascript">
-    mixpanel.track_links("#nav a", "click nav link", {
+    mixpanel.track_links("#nav-about", "click about link", {
+        "referrer": document.referrer
+    }); 
+    mixpanel.track_links("#nav-work", "click projects link", {
         "referrer": document.referrer
     });
-</script>
+    mixpanel.track_links("#nav-resume", "download resume", {
+        "referrer": document.referrer
+    });
+  </script>
   <div id="container">
-  <%= yield %>
+    <%= yield %>
   </div>
   <!-- begin clicky code -->
   <script src="//static.getclicky.com/js" type="text/javascript"></script>
