@@ -1,7 +1,25 @@
+<script type="text/javascript">
+  mixpanel.track_links("#zazzle-projects", "click zazzle-projects link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#readability-projects", "click readability-projects link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#dbc-projects", "click dbc-projects link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#thinkful-projects", "click thinkful-projects link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#rob-projects", "click rob-projects link", {
+        "referrer": document.referrer
+  });
+</script>
+
 <div id="work">
 
   <div class="work-entry span6">
-    <%= link_to(image_tag('zazzle.png', class: "work-image"), "http://www.zazzle.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('zazzle.png', class: "work-image"), "http://www.zazzle.com/", :target => '_blank', :id => 'zazzle-projects' ) %>
     <div class="work-text">
       <div class="all-text">
       <h3>Zazzle</h3>
@@ -23,7 +41,7 @@
   </div>
 
   <div class="work-entry">
-    <%= link_to(image_tag('readingtime.png', class: "work-image"), "http://emailbox-readability.herokuapp.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('readingtime.png', class: "work-image"), "http://emailbox-readability.herokuapp.com/", :target => '_blank', :id => 'readability-projects' ) %>
     <div class="work-text">
       <div class="all-text">
         <h3>Readability for Emailbox</h3>
@@ -34,7 +52,7 @@
   </div>
 
   <div class="work-entry">
-    <%= link_to(image_tag('DBConnect.png', class: "work-image"), "http://dbc-demo.herokuapp.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('DBConnect.png', class: "work-image"), "http://dbc-demo.herokuapp.com/", :target => '_blank', :id => 'dbc-projects' ) %>
     <div class="work-text">
       <div class="all-text">
         <h3>DBConnect</h3>
@@ -45,7 +63,7 @@
   </div>
 
   <div class="work-entry">
-    <%= link_to(image_tag('thinkful.png', class: "work-image"), "http://www.thinkful.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('thinkful.png', class: "work-image"), "http://www.thinkful.com/", :target => '_blank', :id => 'thinkful-projects' ) %>
     <div class="work-text">
       <div class="all-text">
         <h3>Thinkful</h3>
@@ -56,7 +74,7 @@
   </div>
 
   <div class="work-entry">
-    <%= link_to(image_tag('ROB.png', class: "work-image"), "http://www.rapperorbird.com/", :target => '_blank' ) %>
+    <%= link_to(image_tag('ROB.png', class: "work-image"), "http://www.rapperorbird.com/", :target => '_blank', :id => 'rob-projects' ) %>
     <div class="work-text">
       <div class="all-text">
         <h3>R.O.B.</h3>
