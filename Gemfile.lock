@@ -111,6 +111,8 @@ GEM
       multi_json (~> 1.0)
       rack (~> 1.0)
       tilt (~> 1.1, != 1.3.0)
+    sprockets-rails (0.0.1)
+      sprockets (>= 1.0.2)
     therubyracer (0.12.1)
       libv8 (~> 3.16.14.0)
       ref
@@ -147,6 +149,7 @@ DEPENDENCIES
   pg
   rails (= 3.2.13)
   sass-rails (~> 3.2.3)
+  sprockets-rails
   therubyracer
   thin
   twitter-bootstrap-rails
