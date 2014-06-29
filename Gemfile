@@ -44,3 +44,4 @@ gem 'entypo-rails'
 gem "therubyracer"
 gem "less-rails"
 gem "twitter-bootstrap-rails"
+gem 'sprockets-rails', :require => 'sprockets/railtie'
