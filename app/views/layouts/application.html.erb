@@ -44,6 +44,11 @@ mixpanel.init("8f2d5a4947f55d4527a29e3d9ab72c0e");</script><!-- end Mixpanel -->
       <li><%= link_to "Resume", "/HenryWang_Resume.pdf", :target => '_blank' %></li>
     </ul>
   </div>
+  <script type="text/javascript">
+    mixpanel.track_links("#nav a", "click nav link", {
+        "referrer": document.referrer
+    });
+</script>
   <div id="container">
   <%= yield %>
   </div>
