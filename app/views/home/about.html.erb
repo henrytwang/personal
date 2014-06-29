@@ -3,6 +3,24 @@
       'page name' : document.title,
       'url' : window.location.pathname
   });
+  mixpanel.track_links("#angellist", "click angellist link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#facebook", "click facebook link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#flickr", "click flickr link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#github", "click github link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#tumblr", "click tumblr link", {
+        "referrer": document.referrer
+  });
+  mixpanel.track_links("#twitter", "click twitter link", {
+        "referrer": document.referrer
+  });
 </script>  
 
 <div id="about">
@@ -37,12 +55,12 @@
 
   <div class="row">
     <div class="small-10 large-6 small-centered large-centered column">
-      <%= link_to "AngelList", "https://angel.co/henry-wang/", :target => '_blank', :class => "profile-links" %>
-      <%= link_to "Facebook", "http://www.facebook.com/henry.wang", :target => '_blank', :class => "profile-links" %>
-      <%= link_to "Flickr", "http://flic.kr/s/aHsjGkxxov", :target => '_blank', :class => "profile-links" %>
-      <%= link_to "Github", "https://www.github.com/henrytwang", :target => '_blank', :class => "profile-links" %>
-      <%= link_to "Tumblr", "http://henwang.tumblr.com/", :target => '_blank', :class => "profile-links" %>
-      <%= link_to "Twitter", "https://twitter.com/henrytwang", :target => '_blank', :class => "profile-links" %>
+      <%= link_to "AngelList", "https://angel.co/henry-wang/", :target => '_blank', :class => "profile-links", :id => "angellist" %>
+      <%= link_to "Facebook", "http://www.facebook.com/henry.wang", :target => '_blank', :class => "profile-links", :id => "facebook" %>
+      <%= link_to "Flickr", "http://flic.kr/s/aHsjGkxxov", :target => '_blank', :class => "profile-links", :id => "flickr" %>
+      <%= link_to "Github", "https://www.github.com/henrytwang", :target => '_blank', :class => "profile-links", :id => "github" %>
+      <%= link_to "Tumblr", "http://henwang.tumblr.com/", :target => '_blank', :class => "profile-links", :id => "tumblr" %>
+      <%= link_to "Twitter", "https://twitter.com/henrytwang", :target => '_blank', :class => "profile-links", :id => "twitter" %>
     </div>
   </div>
 </div>
