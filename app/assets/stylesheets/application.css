@@ -152,8 +152,13 @@ img {
   text-align: center;
 }
 
+.about-bio {
+  font-size: 16px;
+}
+
 .entry {
   font-size: 16px;
+  text-align: center;
 }
 
 #work {
